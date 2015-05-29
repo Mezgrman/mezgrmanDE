@@ -1,0 +1,327 @@
+@import "vars"
+// Styles for the outer page structure
+
+html, body
+  height: 100%
+
+body
+  background: $color-body-bg
+  color: $color-body-fg
+  display: flex
+  flex-direction: column
+  :font
+    family: $font-stack-body
+    size: 1rem
+  margin: 0px
+
+// The fixed top banner bar
+#topbar
+  background: $color-sitenav-bg
+  left: 0px
+  margin: 0px
+  //overflow: hidden
+  position: fixed
+  top: 0px
+  width: 100%
+  z-index: 999
+
+// The secondary banner with a page navigation or a subtitle
+#subbanner
+  background: $color-subbanner-bg
+  color: $color-subbanner-fg
+  flex: 0 0 auto
+  margin: 55px 0px 0px 0px // sitenav height
+  padding: 0px
+  position: relative
+  
+  // Items in the subbanner might be styled differently
+  a, span
+    color: $color-subbanner-fg
+
+// The logo element
+#logo
+  color: $color-logo-fg
+  background: no-repeat scroll center center transparent
+  background-size: $logo-width
+  display: block
+  :font
+    size: 2rem
+    weight: bold
+  height: $logo-height
+  overflow: hidden
+  text-decoration: none
+  width: $logo-width
+
+// Global site navigation
+#sitenav
+  :font
+    family: $font-stack-sitenav
+    size: 1rem
+    weight: normal
+  justify-content: flex-end
+  
+  // Only apply to sitenav top-level
+  > li
+    line-height: 15px
+    
+    // Make the logo grow, thus aligning left
+    &:first-child
+      flex:
+        base: 0
+        grow: 1
+    
+    // No hover effect for the logo
+    &:not(:first-child) a:hover
+      background: $color-sitenav-hover
+    
+    // Only top-level sitenav links are this big
+    > a
+      padding: 20px
+      
+      // Logo has its own color definition
+      &:not(#logo)
+        color: $color-sitenav-fg
+    
+    // Alternative to links
+    > span
+      color: $color-sitenav-fg
+      padding: 20px
+    
+    // Don't show submenus by default
+    > div.sitenav-submenu
+      display: block
+      //max-height: 0px
+      opacity: 0.0
+      visibility: hidden
+    
+    // Show the submenu on hover
+    &:not(.js-controlled):hover > div.sitenav-submenu
+      //max-height: 100%
+      opacity: 1.0
+      visibility: visible
+
+// Secondary (non-global, page-dependent) navigation / context menu
+#pagenav
+  :font
+    family: $font-stack-pagenav
+    size: 1rem
+    weight: normal
+  justify-content: flex-start
+  line-height: 1.5rem
+  
+  // Styles for nav items in the pagenav
+  li
+    // Display arrows to chain the nav items together to represent a "path"
+    /*&:not(:first-child):before
+      content: ">"
+      padding: 0.75em 0.25em*/
+    
+    // Nav items are a bit flatter
+    a
+      padding: 0.75em 1em
+      
+      // The currently active menu entry
+      &.active
+        background-color: $color-pagenav-active
+      
+      // Hover color magic
+      &:hover
+        background-color: $color-pagenav-hover
+    
+    // Alternative to links
+    span
+      padding: 0.75em 1em
+    
+    // App title item in subbanner flexbox
+    &:first-child
+      :font
+        family: $font-stack-apptitle
+        size: 1rem
+      :flex
+        basis: 0
+        grow: 1
+
+// The content container for a two-pane layout
+#content
+  display: flex
+  flex: 1 0 auto
+  flex-direction: row
+  font-size: 1rem
+  margin: 0px
+
+// The left panel, where the actual content lives
+#panel-left
+  background: $color-main-bg
+  flex:
+    basis: 0
+    grow: 2
+  padding: 1rem
+
+// The complementary right panel
+#panel-right
+  background: $color-complementary-bg
+  flex:
+    basis: 0
+    grow: 1
+  padding: 1rem
+
+// Full-width page footer
+#footer
+  background: $color-footer-bg
+  color: $color-footer-fg
+  flex: 0 0 auto
+  padding: 1rem
+  
+  // Links should look different in the footer
+  a
+    border-bottom: 1px dotted $color-footer-link-underline
+    color: $color-footer-link-text
+    font-weight: bold
+    text-decoration: none
+    
+    // Visited links might look different
+    &:visited
+      color: $color-footer-link-text-visited
+    
+    // Hover color stuff
+    &:hover
+      color: $color-footer-link-text-hover
+
+// A section in the page content, give it a little more space from the following content
+.section
+  padding: 0px 0px 1.5rem
+
+// A container for full-width banners like navbars
+.banner-container
+  margin: 0px auto
+  padding: 0px 2%
+  position: relative
+
+// A horizontal navigation menu, generic styles
+.nav-menu
+  overflow: hidden
+  width: auto
+  
+  // Display the nav list as a flexbox
+  ul
+    display: flex
+    flex-direction: row
+    list-style: none
+    margin: 0px
+    padding: 0px
+  
+  // Styles for nav items
+  li
+    border: 0px none
+    display: block
+    margin: 0px
+    text-align: left
+    //text-transform: uppercase
+    
+    // The navlinks are where the size and color is defined
+    a
+      border: none
+      color: $color-body-fg
+      display: inline-block
+      font-weight: normal
+      padding: 1em
+      text-decoration: none
+      //transition: all 0.3s ease 0s
+    
+    // Alternative if only text is desired, but not a link
+    span
+      color: $color-body-fg
+      display: inline-block
+      padding: 1em
+
+// A submenu in the global navigation
+.sitenav-submenu
+  background: $color-sitenav-submenu-bg
+  color: $color-sitenav-submenu-fg
+  left: 0px
+  margin: 0px
+  padding: 0px
+  position: absolute
+  transition: all 0.3s ease 0s
+  width: 100%
+  
+  // Make it a right-aligned navlist
+  ul
+    :font
+      family: $font-stack-sitenav-submenu
+      size: 1rem
+      weight: normal
+    justify-content: flex-end
+  
+  // Nav item styles
+  li
+    // Links shouldn't be too tall
+    a, span
+      color: $color-sitenav-fg
+      padding: 1em
+        
+      // Hover color magic
+      a:hover
+        background-color: $color-sitenav-submenu-hover
+
+.subbanner-title
+  display: inline-block
+  :font
+    family: $font-stack-subbanner-title
+    size: 1rem
+    weight: bold
+  padding: 0.75em 1em
+  //text-transform: uppercase
+
+.pagination
+  margin: 1em
+  
+  a
+    border: none // Disable underline
+  
+  div.current
+    display: inline-block
+    margin: 0px 0.5em
+  
+  span.disabled
+    color: $color-pagination-disabled
+    font-weight: bold
+    //visibility: hidden
+
+// Kind of like a context menu
+#object-menu
+  :font
+    family: $font-stack-object-menu
+    size: 1rem
+  display: block
+  float: right
+  margin-right: -0.75rem
+  margin-top: -0.75rem
+  
+  &:after
+    clear: both
+  
+  ul
+    flex-direction: row-reverse
+    
+    li
+      a
+        background-size: 1em !important
+        border: none
+        display: inline-block
+        height: 1em
+        min-width: 1em
+        opacity: 0.3
+        padding: 0.25em
+        
+        &:hover
+          opacity: 1.0
+        
+        &.delete
+          background: url($STATIC_PREFIX + "icons/delete-black.svg") no-repeat scroll center center transparent
+        
+        &.edit
+          background: url($STATIC_PREFIX + "icons/edit-black.svg") no-repeat scroll center center transparent
+        
+        &.add
+          background: url($STATIC_PREFIX + "icons/add-black.svg") no-repeat scroll center center transparent

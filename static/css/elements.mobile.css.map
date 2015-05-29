@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oBAAoB;EAClB,cAAc,EAAE,MAAM;EAEtB,wCAAqB;IACnB,MAAM,EAAE,UAAU;;AAEtB,oBAAoB;EAClB,cAAc,EAAE,GAAG;EAEnB,wCAAqB;IACnB,MAAM,EAAE,UAAU",
+"sources": ["elements.mobile.sass"],
+"names": [],
+"file": "elements.mobile.css"
+}

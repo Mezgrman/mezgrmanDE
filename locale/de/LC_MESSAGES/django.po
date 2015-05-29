@@ -1,0 +1,597 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Julian Metzler <contact@mezgr.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-29 23:02+0200\n"
+"PO-Revision-Date: 2015-05-29 23:01+0200\n"
+"Last-Translator: Julian Metzler <contact@mezgr.de>\n"
+"Language-Team: Deutsch <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: displays/forms.py:10
+msgid "Enable Matrix"
+msgstr ""
+
+#: displays/forms.py:11
+msgid "Enable Stop Indicator"
+msgstr ""
+
+#: displays/forms.py:12
+#, fuzzy
+msgid "Display Mode"
+msgstr "Display-Verwaltung"
+
+#: displays/forms.py:13
+msgid "Automatic"
+msgstr ""
+
+#: displays/forms.py:14
+msgid "Static"
+msgstr ""
+
+#: displays/forms.py:15
+msgid "Scrolling"
+msgstr ""
+
+#: displays/forms.py:17
+msgid "Scroll Direction"
+msgstr ""
+
+#: displays/forms.py:18 displays/forms.py:41
+msgid "Left"
+msgstr ""
+
+#: displays/forms.py:19 displays/forms.py:42
+msgid "Right"
+msgstr ""
+
+#: displays/forms.py:21
+msgid "Scroll Mode"
+msgstr ""
+
+#: displays/forms.py:22
+msgid "Repeat after Disappearance"
+msgstr ""
+
+#: displays/forms.py:23
+msgid "Repeat instantly"
+msgstr ""
+
+#: displays/forms.py:24
+msgid "Repeat with space"
+msgstr ""
+
+#: displays/forms.py:26
+msgid "Scroll Speed"
+msgstr ""
+
+#: displays/forms.py:27
+msgid "Scroll Step"
+msgstr ""
+
+#: displays/forms.py:28
+msgid "Scroll Gap"
+msgstr ""
+
+#: displays/forms.py:29
+msgid "Blink Speed"
+msgstr ""
+
+#: displays/forms.py:30
+msgid "Stop Indicator Blink Speed"
+msgstr ""
+
+#: displays/forms.py:37
+msgid "Text"
+msgstr ""
+
+#: displays/forms.py:38
+msgid "Align"
+msgstr ""
+
+#: displays/forms.py:40
+msgid "Center"
+msgstr ""
+
+#: displays/forms.py:44
+msgid "Font"
+msgstr ""
+
+#: displays/forms.py:50
+msgid "Font Size"
+msgstr ""
+
+#: displays/forms.py:51
+msgid "Parse Time String"
+msgstr ""
+
+#: displays/forms.py:52
+msgid "Blend Bitmap"
+msgstr ""
+
+#: displays/forms.py:53
+msgid "Specific Configuration"
+msgstr ""
+
+#: displays/forms.py:54
+#, fuzzy
+msgid "Display Duration"
+msgstr "Display-Verwaltung"
+
+#: displays/views.py:17 templates/sitenav/mezgrman.de.html:13
+msgid "Display Manager"
+msgstr "Display-Verwaltung"
+
+#: displays/views.py:19 displays/views.py:20 displays/views.py:21
+#: displays/views.py:22 displays/views.py:67
+#, fuzzy, python-format
+msgid "Display %s"
+msgstr "Display-Verwaltung"
+
+#: displays/templates/displays/display.html:30
+msgid "Add Text Message"
+msgstr ""
+
+#: displays/templates/displays/display.html:31
+msgid "Add Bitmap Message"
+msgstr ""
+
+#: displays/templates/displays/display.html:32
+msgid "Send All"
+msgstr ""
+
+#: displays/templates/displays/display.html:37
+msgid "Remove"
+msgstr ""
+
+#: displays/templates/displays/display.html:38
+msgid "Move Up"
+msgstr ""
+
+#: displays/templates/displays/display.html:39
+msgid "Move Down"
+msgstr ""
+
+#: displays/templates/displays/display.html:51
+msgid "Add"
+msgstr ""
+
+#: displays/templates/displays/display.html:52
+#: templates/generic/delete.html:10 templates/generic/form.html:17
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: displays/templates/displays/display.html:66
+msgid "Apply"
+msgstr ""
+
+#: staticpages/models.py:6
+msgid "English"
+msgstr ""
+
+#: staticpages/models.py:7
+msgid "German"
+msgstr ""
+
+#: staticpages/models.py:11
+msgid "Default"
+msgstr ""
+
+#: staticpages/models.py:12
+msgid "Minimal"
+msgstr ""
+
+#: staticpages/models.py:17 staticpages/models.py:30
+msgid "Site"
+msgstr ""
+
+#: staticpages/models.py:18 staticpages/models.py:31
+msgid "Subdomain RegEx"
+msgstr ""
+
+#: staticpages/models.py:19
+msgid "Base Path RegEx"
+msgstr ""
+
+#: staticpages/models.py:22
+msgid "Navigation Data"
+msgstr ""
+
+#: staticpages/models.py:23 staticpages/models.py:49
+msgid "In YAML format"
+msgstr ""
+
+#: staticpages/models.py:32
+msgid "Path RegEx"
+msgstr ""
+
+#: staticpages/models.py:33
+msgid ""
+"Make sure to match the end of the string when using a page group! (use $)"
+msgstr ""
+
+#: staticpages/models.py:34
+msgid "Language"
+msgstr ""
+
+#: staticpages/models.py:35
+msgid "Page Rank"
+msgstr ""
+
+#: staticpages/models.py:36
+msgid ""
+"If multiple pages are available for a request, the highest ranked page will "
+"be served."
+msgstr ""
+
+#: staticpages/models.py:39
+msgid "Page Group"
+msgstr ""
+
+#: staticpages/models.py:40
+msgid "Copy of"
+msgstr ""
+
+#: staticpages/models.py:41
+msgid "Page Title"
+msgstr ""
+
+#: staticpages/models.py:42
+msgid "Template"
+msgstr ""
+
+#: staticpages/models.py:43
+msgid "Parse Template Tags"
+msgstr ""
+
+#: staticpages/models.py:44
+msgid "MIME Type"
+msgstr ""
+
+#: staticpages/models.py:45
+msgid "Redirect URL"
+msgstr ""
+
+#: staticpages/models.py:46
+msgid "Permanent Redirect"
+msgstr ""
+
+#: staticpages/models.py:47
+msgid "Extra HTML Head Code"
+msgstr ""
+
+#: staticpages/models.py:48
+msgid "Template Variables"
+msgstr ""
+
+#: staticpages/models.py:50
+msgid "Content"
+msgstr ""
+
+#: storeman/models.py:9 storeman/models.py:33
+msgid "Name"
+msgstr ""
+
+#: storeman/models.py:10 storeman/models.py:34
+msgid "Slug"
+msgstr ""
+
+#: storeman/models.py:11 storeman/models.py:35
+msgid "Location"
+msgstr ""
+
+#: storeman/models.py:36
+#, fuzzy
+msgid "Amount"
+msgstr "Account"
+
+#: storeman/models.py:37
+msgid "Details"
+msgstr ""
+
+#: storeman/models.py:38
+msgid "Image"
+msgstr ""
+
+#: storeman/models.py:50
+#, python-format
+msgid "%(name)s in %(location)s"
+msgstr ""
+
+#: storeman/views.py:14 templates/sitenav/mezgrman.de.html:12
+msgid "StoreMan"
+msgstr "StoreMan"
+
+#: storeman/views.py:16 storeman/views.py:37
+#: storeman/templates/storeman/items_paged.html:6
+msgid "All Items"
+msgstr ""
+
+#: storeman/views.py:17 storeman/views.py:52
+#: storeman/templates/storeman/locations_paged.html:6
+msgid "All Locations"
+msgstr ""
+
+#: storeman/views.py:18 storeman/views.py:79 storeman/views.py:80
+msgid "Add Item"
+msgstr ""
+
+#: storeman/views.py:19 storeman/views.py:102 storeman/views.py:103
+msgid "Add Location"
+msgstr ""
+
+#: storeman/views.py:20 storeman/views.py:131
+#: storeman/templates/storeman/search.html:9
+msgid "Search"
+msgstr ""
+
+#: storeman/views.py:60
+#, python-format
+msgid "Item: %s"
+msgstr ""
+
+#: storeman/views.py:61
+#, python-format
+msgid "Other Items in %s"
+msgstr ""
+
+#: storeman/views.py:63 storeman/views.py:74
+#, python-format
+msgid "%(amount)i× %(name)s"
+msgstr ""
+
+#: storeman/views.py:71
+#, python-format
+msgid "Location: %s"
+msgstr ""
+
+#: storeman/views.py:72
+#, python-format
+msgid "Items in %s"
+msgstr ""
+
+#: storeman/views.py:87
+#, python-format
+msgid "Edit Item: %s"
+msgstr ""
+
+#: storeman/views.py:88
+msgid "Edit Item"
+msgstr ""
+
+#: storeman/views.py:96
+#, python-format
+msgid "Delete Item: %s"
+msgstr ""
+
+#: storeman/views.py:110
+#, python-format
+msgid "Edit Location: %s"
+msgstr ""
+
+#: storeman/views.py:111
+msgid "Edit Location"
+msgstr ""
+
+#: storeman/views.py:119
+#, python-format
+msgid "Delete Location: %s"
+msgstr ""
+
+#: storeman/templates/storeman/search.html:5
+#, fuzzy
+msgid "Search StoreMan"
+msgstr "StoreMan"
+
+#: storeman/templates/storeman/search.html:15
+#, python-format
+msgid "%(amount)s× %(name)s in %(location)s"
+msgstr ""
+
+#: templates/base.html:121
+msgid "Powered by Django, Python 3, SQLite and Sass"
+msgstr "Diese Seite läuft mit Django, Python 3, SQLite und Sass"
+
+#: templates/base.html:122
+msgid "mezgrman.de on GitHub"
+msgstr "mezgrman.de auf GitHub"
+
+#: templates/account/login.html:4 templates/account/login.html.py:7
+#: templates/account/login.html:25
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: templates/account/login.html:19
+msgid "Forgot Password?"
+msgstr "Passwort vergessen?"
+
+#: templates/account/logout.html:4 templates/account/logout.html.py:7
+#: templates/account/logout.html:15 templates/sitenav/common.html:25
+msgid "Sign Out"
+msgstr "Abmelden"
+
+#: templates/account/logout.html:8
+msgid "Are you sure you want to sign out?"
+msgstr "Bist du dir sicher, dass du dich abmelden möchtest?"
+
+#: templates/account/password_change.html:4
+#: templates/account/password_change.html:7
+#: templates/account/password_change.html:16
+#: templates/account/password_reset_from_key.html:4
+#: templates/account/password_reset_from_key.html:7
+#: templates/account/password_reset_from_key.html:21
+#: templates/account/password_reset_from_key_done.html:4
+#: templates/account/password_reset_from_key_done.html:7
+#: templates/sitenav/common.html:24
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+#: templates/account/password_reset.html:4
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset_done.html:4
+#: templates/account/password_reset_done.html:7
+msgid "Password Reset"
+msgstr "Passwort zurücksetzen"
+
+#: templates/account/password_reset.html:10
+msgid "You are currently signed in. To reset your password, please sign out."
+msgstr ""
+"Du bist momentan angemeldet. Um dein Passwort zurückzusetzen, melde dich "
+"bitte ab."
+
+#: templates/account/password_reset.html:19
+msgid "Reset My Password"
+msgstr "Passwort zurücksetzen"
+
+#: templates/account/password_reset_done.html:8
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"Wir haben dir eine E-Mail geschickt. Bitte kontaktiere uns, wenn du diese "
+"nicht innerhalb von ein paar Minuten erhältst."
+
+#: templates/account/password_reset_from_key.html:7
+msgid "Bad Token"
+msgstr "Ungültiger Token"
+
+#: templates/account/password_reset_from_key.html:11
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"Der Passwort-Rücksetz-Link war ungültig, möglicherweise wurde er schon "
+"benutzt. Bitte fordere einen <a href=\"%(passwd_reset_url)s\">neuen Passwort-"
+"Reset</a> an."
+
+#: templates/account/password_reset_from_key.html:27
+#: templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr "Dein Passwort wurde geändert."
+
+#: templates/account/password_set.html:4 templates/account/password_set.html:7
+#: templates/account/password_set.html:17
+msgid "Set Password"
+msgstr "Passwort setzen"
+
+#: templates/account/password_set.html:8
+msgid ""
+"Your account does not currently have a password because you logged in using "
+"a third-party service. You can set a password here."
+msgstr ""
+"Dein Account hat momentan kein Passwort, da du dich über einen Drittanbieter "
+"eingeloggt hast. Du kannst hier ein Passwort festlegen."
+
+#: templates/account/signup.html:4 templates/account/signup.html.py:7
+#: templates/account/signup.html:20
+msgid "Sign Up"
+msgstr "Registrieren"
+
+#: templates/account/signup.html:8
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Hast du bereits einen Account? Dann <a href=\"%(login_url)s\">melde dich "
+"bitte an</a>."
+
+#: templates/generic/delete.html:5
+msgid "Confirm deletion"
+msgstr "Löschen bestätigen"
+
+#: templates/generic/delete.html:9
+msgid "Delete"
+msgstr "Löschen"
+
+#: templates/generic/form.html:16
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/macros/pagination.html:7 templates/macros/pagination.html:10
+msgid "Prev"
+msgstr "Zurück"
+
+#: templates/macros/pagination.html:13
+#, python-format
+msgid "Page %(current)s of %(count)s"
+msgstr "Seite %(current)s von %(count)s"
+
+#: templates/macros/pagination.html:16 templates/macros/pagination.html:19
+msgid "Next"
+msgstr "Vor"
+
+#: templates/sitenav/common.html:4
+msgid "Administration"
+msgstr "Administration"
+
+#: templates/sitenav/common.html:9
+msgid "Admin Panel"
+msgstr "Admin-Panel"
+
+#: templates/sitenav/common.html:17
+msgid "Account"
+msgstr "Account"
+
+#: templates/sitenav/common.html:23
+#, python-format
+msgid "Logged in as <em>%(username)s</em>."
+msgstr "Angemeldet als <em>%(username)s</em>."
+
+#: templates/sitenav/common.html:27
+msgid "Not logged in."
+msgstr "Nicht angemeldet."
+
+#: templates/sitenav/common.html:28
+msgid "Sign in with Twitter"
+msgstr "Mit Twitter anmelden"
+
+#: templates/sitenav/common.html:29
+msgid "Sign in locally"
+msgstr "Lokal anmelden"
+
+#: templates/sitenav/mezgrman.de.html:5
+msgid "Pages"
+msgstr "Seiten"
+
+#: templates/sitenav/mezgrman.de.html:7
+msgid "Apps"
+msgstr "Apps"
+
+#, fuzzy
+#~| msgid "Logged in as <em>%(username)s</em>."
+#~ msgid "Logged in via %(provider)s as <em>%(username)s</em>."
+#~ msgstr "Angemeldet als <em>%(username)s</em>."
+
+#~ msgid "Object Manager"
+#~ msgstr "Objekt-Verwaltung"
+
+#~ msgid "You have been successfully logged out."
+#~ msgstr "Du wurdest erfolgreich abgemeldet."
+
+#~ msgid "Login"
+#~ msgstr "Anmelden"
+
+#~ msgid "Logout"
+#~ msgstr "Abmelden"
+
+#~ msgid "Page not found"
+#~ msgstr "Seite nicht gefunden"
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid "Internal Server Error"
+#~ msgstr "Interner Serverfehler"

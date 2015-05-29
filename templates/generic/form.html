@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_panel %}
+{% if form_title %}
+  <h1>{{ form_title }}</h1>
+{% endif %}
+{% block before_form %}{% endblock before_form %}
+<form method="post" {% block form_options %}{% endblock form_options %}>
+  {% csrf_token %}
+  <table class="form">
+    {{ form.as_table }}
+    <tr>
+      <th></th>
+      <td>
+        <input type="submit" name="save" value="{% trans 'Save' %}" />
+        <input type="submit" name="cancel" value="{% trans 'Cancel' %}" />
+      </td>
+    </tr>
+  </table>
+</form>
+{% block after_form %}{% endblock after_form %}
+{% endblock main_panel %}

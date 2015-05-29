@@ -1,0 +1,23 @@
+{% load kwacros %}
+{% load i18n %}
+{% kwacro pagination_links queryset view %}
+  <div class="pagination">
+    {% if queryset.has_previous %}
+      <a href="{% url view 1 %}">&lt;&lt;</a>
+      <a href="{% url view queryset.previous_page_number %}">&lt; {% trans "Prev" %}</a>
+    {% else %}
+      <span class="disabled">&lt;&lt;</span>
+      <span class="disabled">&lt; {% trans "Prev" %}</span>
+    {% endif %}
+    
+    <div class="current">{% blocktrans with current=queryset.number count=queryset.paginator.num_pages %}Page {{ current }} of {{ count }}{% endblocktrans %}</div>
+    
+    {% if queryset.has_next %}
+      <a href="{% url view queryset.next_page_number %}">{% trans "Next" %} &gt;</a>
+      <a href="{% url view queryset.paginator.num_pages %}">&gt;&gt;</a>
+    {% else %}
+      <span class="disabled">{% trans "Next" %} &gt;</span>
+      <span class="disabled">&gt;&gt;</span>
+    {% endif %}
+  </div>
+{% endkwacro %}

@@ -1,0 +1,126 @@
+{% load i18n %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>
+      {% block title %}
+        {% if title %}
+          {{ title }}
+        {% else %}
+          {% if page_title %}{{ page_title }}{% endif %}
+          {% if page_title and app_title %} :: {% endif %}
+          {% if app_title %}{{ app_title }}{% endif %}
+        {% endif %}
+      {% endblock title %}
+      {% block head_title %}{# Compatibility for allauth #}{% endblock head_title %}
+      {% if request.site.name %} :: {{ request.site.name }}{% endif %}
+    </title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'icons/favicon.ico' %}" />
+    
+    <!-- Base styles -->
+    <link rel="stylesheet" href="{% static 'css/elements.css' %}"></link>
+    <link rel="stylesheet" href="{% static 'css/page.css' %}"></link>
+    
+    <!-- JavaScript i18n -->
+    <script src="{% url 'jsi18n-catalog' %}"></script>
+    
+    <!-- Django variables in JavaScript -->
+    <script src="{% url 'jsvars-catalog' %}"></script>
+    
+    <!-- jQuery + jQueryUI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"></link>
+    <link rel="stylesheet" href="{% static 'css/jqueryui.css' %}"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    
+    <!-- jQuery Cookie Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    
+    <!-- jQueryUI Timepicker Plugin -->
+    <link rel="stylesheet" href="{% static 'css/lib/jquery-ui-timepicker-addon.css' %}">
+    <script src="{% static 'js/lib/jquery-ui-timepicker-addon.min.js' %}"></script>
+    
+    <!-- Initialize stuff -->
+    <!--<script src="{% static 'js/csrf.init.js' %}"></script>-->
+    
+    {% if request.is_touch_device %}
+      <!-- Mobile -->
+      <link rel="stylesheet" href="{% static 'css/page.mobile.css' %}"></link>
+      <link rel="stylesheet" href="{% static 'css/elements.mobile.css' %}"></link>
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <script src="{% static 'js/navbars.init.js' %}"></script>
+    {% else %}
+      <link rel="stylesheet" href="{% static 'css/webfonts/Roboto.css' %}"></link>
+    {% endif %}
+    
+    <!-- Extra libraries -->
+    {% block extrahead %}{% endblock extrahead %}
+  </head>
+  <body>
+    <div id="topbar" role="banner">
+      <div class="banner-container">
+        <div class="nav-menu" role="navigation">
+          {% include request.site_navbar_filename %}
+        </div>
+      </div>
+    </div>
+    
+    <div id="subbanner">
+      <div class="banner-container">
+        {% block subbanner %}
+          {% if app_navbar or app_title %}
+            <div class="nav-menu">
+              <ul id="pagenav">
+                <li><{% if app_root %}a href="{{ app_root }}"{% else %}span{% endif %} id="app-root">{{ app_title }}</a></li>
+                {% for name, path, active in app_navbar %}
+                  <li><a {% if active %}class="active"{% endif %} href="{{ path }}">{{ name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endblock subbanner %}
+      </div>
+    </div>
+    
+    <div id="content">
+      <div id="panel-left" role="main">
+        <div id="object-menu" class="nav-menu">
+          <ul>
+            {% block object_menu %}{% endblock object_menu %}
+          </ul>
+        </div>
+        {% block main_panel %}{% endblock main_panel %}
+        {% block content %}{# Compatibility for allauth #}{% endblock content %}
+      </div>
+      
+      {% if sidebar_title or sidebar_queryset %}
+        <div id="panel-right" role="complementary">
+          {% block sidebar %}
+            {% if sidebar_title %}
+              <h3>{{ sidebar_title }}</h3>
+            {% endif %}
+            {% if sidebar_queryset %}
+              <ul>
+                {% for sidebar_qs_item, sidebar_qs_display_text in sidebar_queryset %}
+                  <li><a class="nodeco" href="{{ sidebar_qs_item.get_absolute_url }}">{{ sidebar_qs_display_text }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endblock sidebar %}
+        </div>
+      {% endif %}
+    </div>
+    
+    <div id="footer" role="contentinfo">
+      {% block footer %}
+        <p>&#0169; 2015 Mezgrman</p>
+        <p>{% trans "Powered by Django, Python 3, SQLite and Sass" %}</p>
+        <p><a class="external" target="_blank" href="https://github.com/Mezgrman/mezgrmanDE">{% trans "mezgrman.de on GitHub" %}</a></p>
+      {% endblock footer %}
+    </div>
+  </body>
+</html>

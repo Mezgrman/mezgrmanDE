@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load kwacros %}
+{% loadkwacros "macros/pagination.html" %}
+{% block main_panel %}
+  <h1>{% trans "All Items" %}</h1>
+  {% usekwacro pagination_links items 'storeman:items-paged' %}
+  
+  <ul>
+  {% for item in items %}
+    <li>
+      <a class="nodeco" href="{{ item.get_absolute_url }}">{{ item }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  
+  {% usekwacro pagination_links items 'storeman:items-paged' %}
+{% endblock main_panel %}

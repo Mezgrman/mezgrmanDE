@@ -1,0 +1,6 @@
+{% extends "generic/form.html" %}
+{% load staticfiles %}
+{% block extrahead %}
+  <script src="{% static 'js/datetimepicker.init.js' %}"></script>
+{% endblock extrahead %}
+{% block form_options %}enctype="multipart/form-data"{% endblock form_options %}

@@ -1,0 +1,7 @@
+The following packages need to be installed.
+
+django-minidetector: Detection of mobile devices and serving the mobile CSS (Install from GitHub)
+kwacros: Template macros (Install from GitHub)
+django-subdomains: Subdomain-based URL routing (install using pip)
+python-yaml: Variable parsing for static pages (install using apt-get)
+django-allauth: Authentication using third party services (install using pip)

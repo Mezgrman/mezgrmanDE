@@ -1,0 +1,35 @@
+{% load i18n %}
+{% if request.user.is_superuser %}
+  <li class="has-submenu">
+    <a>{% trans "Administration" %}</a>
+     <div class="sitenav-submenu">
+      <div class="banner-container">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="{% url 'admin:index' %}">{% trans "Admin Panel" %}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+{% endif %}
+<li class="has-submenu">
+  <a>{% trans "Account" %}</a>
+   <div class="sitenav-submenu">
+    <div class="banner-container">
+      <div class="nav-menu">
+        <ul>
+          {% if request.user.is_authenticated %}
+            <li><span>{% blocktrans with username=request.user.username %}Logged in as <em>{{ username }}</em>.{% endblocktrans %}</span></li>
+            <li><a href="{% url 'account_change_password' %}">{% trans "Change Password" %}</a></li>
+            <li><a href="{% url 'account_logout' %}?next={% firstof request.path '/' %}">{% trans "Sign Out" %}</a></li>
+          {% else %}
+            <li><span>{% trans "Not logged in." %}</span></li>
+            <li><a href="{% url 'twitter_login' %}?next={% firstof request.path '/' %}">{% trans "Sign in with Twitter" %}</a></li>
+            <li><a href="{% url 'account_login' %}?next={% firstof request.path '/' %}">{% trans "Sign in locally" %}</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Julian Metzler <contact@mezgr.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-06 21:08+0200\n"
+"PO-Revision-Date: 2015-05-05 19:33+0200\n"
+"Last-Translator: Julian Metzler <contact@mezgr.de>\n"
+"Language-Team: Deutsch <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: displays/forms.py:10
+msgid "Enable Matrix"
+msgstr "Matrix aktivieren"
+
+#: displays/forms.py:11
+msgid "Enable Stop Indicator"
+msgstr "Stop-Indikator aktivieren"
+
+#: displays/forms.py:12
+msgid "Display Mode"
+msgstr "Display-Modus"
+
+#: displays/forms.py:13
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: displays/forms.py:14
+msgid "Static"
+msgstr "Statisch"
+
+#: displays/forms.py:15
+msgid "Scrolling"
+msgstr "Lauftext"
+
+#: displays/forms.py:17
+msgid "Scroll Direction"
+msgstr "Lauftext-Richtung"
+
+#: displays/forms.py:18 displays/forms.py:41
+msgid "Left"
+msgstr "Links"
+
+#: displays/forms.py:19 displays/forms.py:42
+msgid "Right"
+msgstr "Rechts"
+
+#: displays/forms.py:21
+msgid "Scroll Mode"
+msgstr "Lauftext-Modus"
+
+#: displays/forms.py:22
+msgid "Repeat after Disappearance"
+msgstr "Wiederholen, sobald verschwunden"
+
+#: displays/forms.py:23
+msgid "Repeat instantly"
+msgstr "Sofort wiederholen"
+
+#: displays/forms.py:24
+msgid "Repeat with space"
+msgstr "Mit Abstand wiederholen"
+
+#: displays/forms.py:26
+msgid "Scroll Speed"
+msgstr "Lauftext-Geschwindigkeit"
+
+#: displays/forms.py:27
+msgid "Scroll Step"
+msgstr "Lauftext-Schrittweite"
+
+#: displays/forms.py:28
+msgid "Scroll Gap"
+msgstr "Lauftext-Abstand"
+
+#: displays/forms.py:29
+msgid "Blink Speed"
+msgstr "Blinkfrequenz"
+
+#: displays/forms.py:30
+msgid "Stop Indicator Blink Speed"
+msgstr "Stop-Indikator-Blinkfrequenz"
+
+#: displays/forms.py:37
+msgid "Text"
+msgstr "Text"
+
+#: displays/forms.py:38
+msgid "Align"
+msgstr "Ausrichtung"
+
+#: displays/forms.py:40
+msgid "Center"
+msgstr "Zentriert"
+
+#: displays/forms.py:44
+msgid "Font"
+msgstr "Schriftart"
+
+#: displays/forms.py:50
+msgid "Font Size"
+msgstr "Schriftgröße"
+
+#: displays/forms.py:51
+msgid "Parse Time String"
+msgstr "Zeit-String parsen"
+
+#: displays/forms.py:52
+msgid "Blend Bitmap"
+msgstr "Bitmap überlagern"
+
+#: displays/forms.py:53
+msgid "Specific Configuration"
+msgstr "Spezifische Konfiguration"
+
+#: displays/forms.py:54
+msgid "Display Duration"
+msgstr "Anzeigedauer"
+
+#: displays/templates/displays/display.html:30
+msgid "Add Text Message"
+msgstr "Text-Nachricht hinzufügen"
+
+#: displays/templates/displays/display.html:31
+msgid "Add Bitmap Message"
+msgstr "Bitmap-Nachricht hinzufügen"
+
+#: displays/templates/displays/display.html:32
+msgid "Send All"
+msgstr "Alle senden"
+
+#: displays/templates/displays/display.html:37
+msgid "Remove"
+msgstr "Entfernen"
+
+#: displays/templates/displays/display.html:38
+msgid "Move Up"
+msgstr "Nach oben"
+
+#: displays/templates/displays/display.html:39
+msgid "Move Down"
+msgstr "Nach unten"
+
+#: displays/templates/displays/display.html:51
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: displays/templates/displays/display.html:52
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: displays/templates/displays/display.html:66
+msgid "Apply"
+msgstr "Anwenden"
+
+#: displays/views.py:15
+msgid "Display Manager"
+msgstr "Display-Verwaltung"
+
+#: displays/views.py:17 displays/views.py:18 displays/views.py:19
+#: displays/views.py:20 displays/views.py:68
+#, python-format
+msgid "Display %s"
+msgstr "Display %s"

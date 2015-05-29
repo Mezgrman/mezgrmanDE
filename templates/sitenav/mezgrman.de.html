@@ -1,0 +1,20 @@
+{% load i18n %}
+{% load staticfiles %}
+<ul id="sitenav">
+  <li><a id="logo" href="/" style="background-image: url('{% static "images/logos/mezgrman.de.svg" %}');"></a></li>
+  <li><a>{% trans "Pages" %}</a></li>
+  <li class="has-submenu">
+    <a>{% trans "Apps" %}</a>
+     <div class="sitenav-submenu">
+      <div class="banner-container">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="{% url 'storeman:locations-paged' %}">{% trans "StoreMan" %}</a></li>
+            <li><a href="{% url 'displays:index' %}">{% trans "Display Manager" %}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+  {% include "sitenav/common.html" %}
+</ul>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_panel %}
+{% block before_table %}{% endblock before_table %}
+<div class="section">
+  <table class="key-value">
+    {% for field_name, field_value in fields %}
+      <tr>
+        <th>{{ field_name }}</th>
+        <td>{{ field_value }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+{% block after_table %}{% endblock after_table %}
+{% endblock main_panel %}

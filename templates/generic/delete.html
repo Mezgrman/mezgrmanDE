@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_panel %}
+<h2>{% trans "Confirm deletion" %}</h2>
+<p>{{ instance }}</p>
+<form method="post">
+  {% csrf_token %}
+  <input type="submit" name="confirm" value="{% trans 'Delete' %}" />
+  <input type="submit" name="abort" value="{% trans 'Cancel' %}" />
+</form>
+{% endblock main_panel %}

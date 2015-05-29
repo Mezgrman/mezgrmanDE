@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load kwacros %}
+{% loadkwacros "macros/pagination.html" %}
+{% block main_panel %}
+  <h1>{% trans "All Locations" %}</h1>
+  {% usekwacro pagination_links locations 'storeman:locations-paged' %}
+  
+  <ul>
+  {% for location in locations %}
+    <li>
+      <a class="nodeco" href="{{ location.get_absolute_url }}">{{ location }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  
+  {% usekwacro pagination_links locations 'storeman:locations-paged' %}
+{% endblock main_panel %}

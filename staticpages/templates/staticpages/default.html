@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ page.head_extras|safe }}
+{% endblock extrahead %}
+{% block main_panel %}
+  {{ page.content|safe }}
+{% endblock main_panel %}

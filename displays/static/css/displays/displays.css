@@ -1,0 +1,19 @@
+.result-indicator {
+  font-size: 0.8em; }
+
+.result-success {
+  color: green; }
+
+.result-error {
+  color: red; }
+
+.result-waiting {
+  color: inherit; }
+
+#display-simulation {
+  margin: -1rem auto 2rem; }
+
+#sel-msg-list {
+  width: 100%; }
+
+/*# sourceMappingURL=displays.css.map */

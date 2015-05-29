@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load modelfields %}
+{% load i18n %}
+
+{% block object_menu %}
+  <li><a class="delete" href="{% url 'storeman:location-delete' location.id %}"></a></li>
+  <li><a class="edit" href="{% url 'storeman:location-edit' location.id %}"></a></li>
+{% endblock object_menu %}
+
+{% block main_panel %}
+<h2>{{ location }}</h2>
+<div class="section">
+  <table class="key-value">
+    <tr>
+      <th>{% fieldname location 'name' %}</th>
+      <td>{{ location.name }}</td>
+    </tr>
+    <tr>
+      <th>{% fieldname location 'location' %}</th>
+      <td>{{ location.location }}</td>
+    </tr>
+  </table>
+</div>
+{% endblock main_panel %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load modelfields %}
+{% load i18n %}
+
+{% block object_menu %}
+  <li><a class="delete" href="{% url 'storeman:item-delete' item.id %}"></a></li>
+  <li><a class="edit" href="{% url 'storeman:item-edit' item.id %}"></a></li>
+{% endblock object_menu %}
+
+{% block main_panel %}
+<h2>{{ item }}</h2>
+<div class="section">
+  <table class="key-value">
+    <tr>
+      <th>{% fieldname item 'name' %}</th>
+      <td>{{ item.name }}</td>
+    </tr>
+    <tr>
+      <th>{% fieldname item 'location' %}</th>
+      <td><a class="nobold" href="{{ item.location.get_absolute_url }}">{{ item.location }}</a></td>
+    </tr>
+    <tr>
+      <th>{% fieldname item 'amount' %}</th>
+      <td>{{ item.amount }}</td>
+    </tr>
+    {% if item.details %}
+      <tr>
+        <th>{% fieldname item 'details' %}</th>
+        <td>{{ item.details }}</td>
+      </tr>
+    {% endif %}
+    {% if item.image %}
+      <tr>
+        <th>{% fieldname item 'image' %}</th>
+        <td><a class="nodeco" href="{{ item.image.url }}"><img src="{{ item.image.url }}" style="max-width: 20em;"></a></td>
+      </tr>
+    {% endif %}
+  </table>
+</div>
+{% endblock main_panel %}

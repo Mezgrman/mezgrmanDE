@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Julian Metzler <contact@mezgr.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-06 21:08+0200\n"
+"PO-Revision-Date: 2015-05-06 21:06+0200\n"
+"Last-Translator: Julian Metzler <contact@mezgr.de>\n"
+"Language-Team: Deutsch <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: storeman/models.py:7 storeman/models.py:22
+msgid "Name"
+msgstr "Name"
+
+#: storeman/models.py:8 storeman/models.py:23
+msgid "Location"
+msgstr "Ort"
+
+#: storeman/models.py:24
+msgid "Amount"
+msgstr "Anzahl"
+
+#: storeman/models.py:25
+msgid "Details"
+msgstr "Details"
+
+#: storeman/models.py:33
+#, python-format
+msgid "%(name)s in %(location)s"
+msgstr "%(name)s in %(location)s"
+
+#: storeman/templates/storeman/items_paged.html:6 storeman/views.py:16
+#: storeman/views.py:37
+msgid "All Items"
+msgstr "Alle Objekte"
+
+#: storeman/templates/storeman/locations_paged.html:6 storeman/views.py:17
+#: storeman/views.py:52
+msgid "All Locations"
+msgstr "Alle Orte"
+
+#: storeman/templates/storeman/search.html:5
+msgid "Search StoreMan"
+msgstr "StoreMan durchsuchen"
+
+#: storeman/templates/storeman/search.html:9 storeman/views.py:20
+#: storeman/views.py:131
+msgid "Search"
+msgstr "Suchen"
+
+#: storeman/templates/storeman/search.html:15
+#, python-format
+msgid "%(amount)s× %(name)s in %(location)s"
+msgstr "%(amount)s× %(name)s in %(location)s"
+
+#: storeman/views.py:14
+msgid "StoreMan"
+msgstr "StoreMan"
+
+#: storeman/views.py:18 storeman/views.py:79 storeman/views.py:80
+msgid "Add Item"
+msgstr "Objekt hinzufügen"
+
+#: storeman/views.py:19 storeman/views.py:102 storeman/views.py:103
+msgid "Add Location"
+msgstr "Ort hinzufügen"
+
+#: storeman/views.py:60
+#, python-format
+msgid "Item: %s"
+msgstr "Objekt: %s"
+
+#: storeman/views.py:61
+#, python-format
+msgid "Other Items in %s"
+msgstr "Andere Objekte in %s"
+
+#: storeman/views.py:63 storeman/views.py:74
+#, python-format
+msgid "%(amount)i× %(name)s"
+msgstr "%(amount)i× %(name)s"
+
+#: storeman/views.py:71
+#, python-format
+msgid "Location: %s"
+msgstr "Ort: %s"
+
+#: storeman/views.py:72
+#, python-format
+msgid "Items in %s"
+msgstr "Objekte in %s"
+
+#: storeman/views.py:87
+#, python-format
+msgid "Edit Item: %s"
+msgstr "Objekt bearbeiten: %s"
+
+#: storeman/views.py:88
+msgid "Edit Item"
+msgstr "Objekt bearbeiten"
+
+#: storeman/views.py:96
+#, python-format
+msgid "Delete Item: %s"
+msgstr "Objekt löschen: %s"
+
+#: storeman/views.py:110
+#, python-format
+msgid "Edit Location: %s"
+msgstr "Ort bearbeiten: %s"
+
+#: storeman/views.py:111
+msgid "Edit Location"
+msgstr "Ort bearbeiten"
+
+#: storeman/views.py:119
+#, python-format
+msgid "Delete Location: %s"
+msgstr "Ort löschen: %s"
+
+#~ msgid "Size"
+#~ msgstr "Größe"
+
+#~ msgid "%(name)s (Size %(size)i)"
+#~ msgstr "%(name)s (Größe %(size)i)"
+
+#~ msgid "Creation Date"
+#~ msgstr "Erstelldatum"
+
+#~ msgid "Item Manager"
+#~ msgstr "Objekt-Verwaltung"
+
+#~ msgid "Recently added Items"
+#~ msgstr "Zuletzt erstellte Objekte"
+
+#~ msgid "Recently added Locations"
+#~ msgstr "Zuletzt erstellte Orte"

@@ -1,0 +1,197 @@
+@import "vars"
+//Styles for basic page elements in the main content
+
+a
+  border-bottom: 1px dotted $color-content-link-underline
+  color: $color-content-link-text
+  font-weight: bold
+  text-decoration: none
+  
+  // A link without bold markup
+  &.nobold
+    font-weight: normal
+  
+  // A link without special markup
+  &.nodeco
+    border: none
+    font-weight: normal
+  
+  // Disable the dotted rectangle when a link has focus
+  &:focus
+    outline: 0
+  
+  // Visited links might look different
+  &:visited
+    color: $color-content-link-text-visited
+  
+  // Hover color stuff
+  &:hover
+    color: $color-content-link-text-hover
+
+em
+  font-style: normal
+  font-weight: bold
+
+h1, h2, h3
+  // Make headlines take up a bit less space
+  margin: 0px 0px 0.6em 0px
+
+h1
+  font-size: 1.6em
+
+p
+  // Paragraphs in general should be a bit slimmer and justified
+  margin: 0.75em 0px
+  text-align: justify
+
+// Preformatted text
+.pre, .code
+  font-family: $font-stack-pre
+
+.code
+  font-weight: bold
+
+pre
+  border: 1px solid $color-pre-border
+  padding: 0.5em
+
+table, td, th
+  border: 1px solid $color-body-fg
+
+table
+  border-collapse: collapse
+  
+  &.alternating
+    tr
+      // Alternating row color
+      &:nth-child(even)
+        background: $color-table-row-even-bg
+        color: $color-table-row-even-fg
+      
+      &:nth-child(odd)
+        background: $color-table-row-odd-bg
+        color: $color-table-row-odd-fg
+  
+  // Forms that are displayed as tables
+  &.form
+    border: none
+    
+    th, td
+      border: none
+      vertical-align: top
+    
+    th
+      background: $color-form-label-bg
+      color: $color-form-label-fg
+      text-align: right
+    
+    td
+      background: $color-form-field-bg
+      color: $color-form-field-fg
+      text-align: left
+      //width: 85% // Because max-width: 25% doesn't work on th
+  
+  // A table for displaying a column of keys and a column of values
+  &.key-value
+    border: none
+    
+    th, td
+      border: none
+      vertical-align: top
+    
+    th
+      background: $color-table-key-bg
+      color: $color-table-key-fg
+      text-align: right
+    
+    td
+      background: $color-table-value-bg
+      color: $color-table-value-fg
+      text-align: left
+      //width: 85% // Because max-width: 25% doesn't work on th
+
+td, th
+  padding: 0.25em
+
+th
+  background: $color-table-header-bg
+  color: $color-table-header-fg
+
+tr
+  background: $color-table-row-bg
+  color: $color-table-row-fg
+
+ol, ul
+  list-style-type: square
+  padding: 0px 2em // Stop lists from being indented to the right
+  
+  li
+    margin: 0.25em 0px
+  
+  &.nobullets
+    list-style-type: none
+
+// Auto-generated list of form field errors
+ul.errorlist
+  background: $color-form-error-bg
+  color: $color-form-error-fg
+  font-size: 0.65rem
+  list-style-type: none
+  margin: 0px
+  padding: 0px
+
+.flex-hor
+  display: flex
+  flex-direction: row
+  
+  &.flex-has-margin > *
+    margin: 0px 0.5rem
+
+.flex-ver
+  display: flex
+  flex-direction: column
+  
+  &.flex-has-margin > *
+    margin: 0.5rem 0px
+
+.flex-hor-mobile-ver
+  // Horizontal on Desktop, vertical on mobile
+  display: flex
+  flex-direction: row
+  
+  &.flex-has-margin > *
+    margin: 0px 0.5rem
+
+.flex-ver-mobile-hor
+  // Vertical on Desktop, horizontal on mobile
+  display: flex
+  flex-direction: column
+  
+  &.flex-has-margin > *
+    margin: 0.5rem 0px
+
+.flex-static > *
+  // Force size distribution according to flex values regardless of content
+  flex: 1 1 0
+
+.hidden
+  display: none
+
+.small
+  font-size: 0.75em
+
+.message
+  padding: 1em
+
+.info
+  background: lightblue
+
+.warning
+  background: orange
+
+.error
+  background: lightcoral
+
+.helptext
+  color: $color-form-helptext-fg
+  font-size: 0.8em

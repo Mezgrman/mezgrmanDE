@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_panel %}
+<h1>{% trans "Search StoreMan" %}</h1>
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="query" value="{{ query }}" />
+  <input type="submit" value="{% trans 'Search' %}" />
+</form>
+
+{% if results %}
+  <ul>
+    {% for item in results %}
+      <li><a class="nodeco" href="{% url 'storeman:item-detail' item.id item.slug %}">{% blocktrans with amount=item.amount name=item.name location=item.location.name %}{{ amount }}× {{ name }} in {{ location }}{% endblocktrans %}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock main_panel %}

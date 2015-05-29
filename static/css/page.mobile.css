@@ -1,0 +1,51 @@
+#content {
+  flex-direction: column !important; }
+
+#sitenav > li:first-child {
+  background: url("/static/icons/down-white.svg") no-repeat scroll right center transparent;
+  background-size: 0.75em; }
+#sitenav:not(.js-controlled):hover > li:first-child {
+  background: url("/static/icons/up-white.svg") no-repeat scroll right center transparent;
+  background-size: 0.75em; }
+#sitenav > li:not(:first-child) {
+  display: none; }
+#sitenav:not(.js-controlled):hover > li:not(:first-child) {
+  display: block; }
+#sitenav > li > a:hover {
+  background-color: transparent !important; }
+
+#pagenav > li:first-child {
+  background: url("/static/icons/down-white.svg") no-repeat scroll right center transparent;
+  background-size: 0.75em; }
+#pagenav:not(.js-controlled):hover > li:first-child {
+  background: url("/static/icons/up-white.svg") no-repeat scroll right center transparent;
+  background-size: 0.75em; }
+#pagenav > li:not(:first-child) {
+  display: none; }
+#pagenav:not(.js-controlled):hover > li:not(:first-child) {
+  display: block; }
+#pagenav > li > a:hover {
+  background-color: transparent !important; }
+#pagenav li a.active {
+  background-color: transparent !important; }
+
+.nav-menu ul {
+  flex-direction: column; }
+
+.sitenav-submenu li a:hover {
+  background-color: transparent !important; }
+
+.has-submenu {
+  background: url("/static/icons/down-white.svg") no-repeat scroll right center transparent;
+  background-size: 0.75em; }
+  .has-submenu:not(.js-controlled):hover {
+    background: url("/static/icons/up-white.svg") no-repeat scroll right center transparent;
+    background-size: 0.75em; }
+
+.sitenav-submenu {
+  transition: none; }
+
+#object-menu {
+  font-size: 1.5rem; }
+
+/*# sourceMappingURL=page.mobile.css.map */

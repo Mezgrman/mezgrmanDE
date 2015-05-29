@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-06 21:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: staticpages/models.py:6
+msgid "English"
+msgstr "Englisch"
+
+#: staticpages/models.py:7
+msgid "German"
+msgstr "Deutsch"
+
+#: staticpages/models.py:11
+msgid "Default"
+msgstr "Standard"
+
+#: staticpages/models.py:12
+msgid "Minimal"
+msgstr "Minimal"
+
+#: staticpages/models.py:17 staticpages/models.py:30
+msgid "Site"
+msgstr "Seite"
+
+#: staticpages/models.py:18 staticpages/models.py:31
+msgid "Subdomain RegEx"
+msgstr "Subdomain-RegEx"
+
+#: staticpages/models.py:19
+msgid "Base Path RegEx"
+msgstr "Basispfad-RegEx"
+
+#: staticpages/models.py:22
+msgid "Navigation Data"
+msgstr "Navigations-Daten"
+
+#: staticpages/models.py:23 staticpages/models.py:49
+msgid "In YAML format"
+msgstr "Im YAML-Format"
+
+#: staticpages/models.py:32
+msgid "Path RegEx"
+msgstr "Pfad-RegEx"
+
+#: staticpages/models.py:33
+msgid ""
+"Make sure to match the end of the string when using a page group! (use $)"
+msgstr ""
+"Stelle sicher, dass du das Ende des Strings matchst, wenn du eine "
+"Seitengruppe verwendest! (Benutze $)"
+
+#: staticpages/models.py:34
+msgid "Language"
+msgstr "Sprache"
+
+#: staticpages/models.py:35
+msgid "Page Rank"
+msgstr "Seiten-Rang"
+
+#: staticpages/models.py:36
+msgid ""
+"If multiple pages are available for a request, the highest ranked page will "
+"be served."
+msgstr ""
+"Wenn für eine Anfrage mehrere Seiten verfügbar sind, wird die Seite mit dem "
+"höchsten Rang ausgeliefert."
+
+#: staticpages/models.py:39
+msgid "Page Group"
+msgstr "Seitengruppe"
+
+#: staticpages/models.py:40
+msgid "Copy of"
+msgstr "Kopie von"
+
+#: staticpages/models.py:41
+msgid "Page Title"
+msgstr "Seitentitel"
+
+#: staticpages/models.py:42
+msgid "Template"
+msgstr "Template"
+
+#: staticpages/models.py:43
+msgid "Parse Template Tags"
+msgstr "Template-Tags parsen"
+
+#: staticpages/models.py:44
+msgid "MIME Type"
+msgstr "MIME-Typ"
+
+#: staticpages/models.py:45
+msgid "Redirect URL"
+msgstr "Weiterleitungs-URL"
+
+#: staticpages/models.py:46
+msgid "Permanent Redirect"
+msgstr "Permanente Weiterleitung"
+
+#: staticpages/models.py:47
+msgid "Extra HTML Head Code"
+msgstr "Zusätzlicher HTML-Head-Code"
+
+#: staticpages/models.py:48
+msgid "Template Variables"
+msgstr "Template-Variablen"
+
+#: staticpages/models.py:50
+msgid "Content"
+msgstr "Inhalt"
