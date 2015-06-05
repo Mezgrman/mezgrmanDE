@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-29 23:02+0200\n"
-"PO-Revision-Date: 2015-05-29 23:01+0200\n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
+"PO-Revision-Date: 2015-06-05 19:15+0200\n"
 "Last-Translator: Julian Metzler <contact@mezgr.de>\n"
 "Language-Team: Deutsch <>\n"
 "Language: \n"
@@ -18,394 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
-
-#: displays/forms.py:10
-msgid "Enable Matrix"
-msgstr ""
-
-#: displays/forms.py:11
-msgid "Enable Stop Indicator"
-msgstr ""
-
-#: displays/forms.py:12
-#, fuzzy
-msgid "Display Mode"
-msgstr "Display-Verwaltung"
-
-#: displays/forms.py:13
-msgid "Automatic"
-msgstr ""
-
-#: displays/forms.py:14
-msgid "Static"
-msgstr ""
-
-#: displays/forms.py:15
-msgid "Scrolling"
-msgstr ""
-
-#: displays/forms.py:17
-msgid "Scroll Direction"
-msgstr ""
-
-#: displays/forms.py:18 displays/forms.py:41
-msgid "Left"
-msgstr ""
-
-#: displays/forms.py:19 displays/forms.py:42
-msgid "Right"
-msgstr ""
-
-#: displays/forms.py:21
-msgid "Scroll Mode"
-msgstr ""
-
-#: displays/forms.py:22
-msgid "Repeat after Disappearance"
-msgstr ""
-
-#: displays/forms.py:23
-msgid "Repeat instantly"
-msgstr ""
-
-#: displays/forms.py:24
-msgid "Repeat with space"
-msgstr ""
-
-#: displays/forms.py:26
-msgid "Scroll Speed"
-msgstr ""
-
-#: displays/forms.py:27
-msgid "Scroll Step"
-msgstr ""
-
-#: displays/forms.py:28
-msgid "Scroll Gap"
-msgstr ""
-
-#: displays/forms.py:29
-msgid "Blink Speed"
-msgstr ""
-
-#: displays/forms.py:30
-msgid "Stop Indicator Blink Speed"
-msgstr ""
-
-#: displays/forms.py:37
-msgid "Text"
-msgstr ""
-
-#: displays/forms.py:38
-msgid "Align"
-msgstr ""
-
-#: displays/forms.py:40
-msgid "Center"
-msgstr ""
-
-#: displays/forms.py:44
-msgid "Font"
-msgstr ""
-
-#: displays/forms.py:50
-msgid "Font Size"
-msgstr ""
-
-#: displays/forms.py:51
-msgid "Parse Time String"
-msgstr ""
-
-#: displays/forms.py:52
-msgid "Blend Bitmap"
-msgstr ""
-
-#: displays/forms.py:53
-msgid "Specific Configuration"
-msgstr ""
-
-#: displays/forms.py:54
-#, fuzzy
-msgid "Display Duration"
-msgstr "Display-Verwaltung"
-
-#: displays/views.py:17 templates/sitenav/mezgrman.de.html:13
-msgid "Display Manager"
-msgstr "Display-Verwaltung"
-
-#: displays/views.py:19 displays/views.py:20 displays/views.py:21
-#: displays/views.py:22 displays/views.py:67
-#, fuzzy, python-format
-msgid "Display %s"
-msgstr "Display-Verwaltung"
-
-#: displays/templates/displays/display.html:30
-msgid "Add Text Message"
-msgstr ""
-
-#: displays/templates/displays/display.html:31
-msgid "Add Bitmap Message"
-msgstr ""
-
-#: displays/templates/displays/display.html:32
-msgid "Send All"
-msgstr ""
-
-#: displays/templates/displays/display.html:37
-msgid "Remove"
-msgstr ""
-
-#: displays/templates/displays/display.html:38
-msgid "Move Up"
-msgstr ""
-
-#: displays/templates/displays/display.html:39
-msgid "Move Down"
-msgstr ""
-
-#: displays/templates/displays/display.html:51
-msgid "Add"
-msgstr ""
-
-#: displays/templates/displays/display.html:52
-#: templates/generic/delete.html:10 templates/generic/form.html:17
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#: displays/templates/displays/display.html:66
-msgid "Apply"
-msgstr ""
-
-#: staticpages/models.py:6
-msgid "English"
-msgstr ""
-
-#: staticpages/models.py:7
-msgid "German"
-msgstr ""
-
-#: staticpages/models.py:11
-msgid "Default"
-msgstr ""
-
-#: staticpages/models.py:12
-msgid "Minimal"
-msgstr ""
-
-#: staticpages/models.py:17 staticpages/models.py:30
-msgid "Site"
-msgstr ""
-
-#: staticpages/models.py:18 staticpages/models.py:31
-msgid "Subdomain RegEx"
-msgstr ""
-
-#: staticpages/models.py:19
-msgid "Base Path RegEx"
-msgstr ""
-
-#: staticpages/models.py:22
-msgid "Navigation Data"
-msgstr ""
-
-#: staticpages/models.py:23 staticpages/models.py:49
-msgid "In YAML format"
-msgstr ""
-
-#: staticpages/models.py:32
-msgid "Path RegEx"
-msgstr ""
-
-#: staticpages/models.py:33
-msgid ""
-"Make sure to match the end of the string when using a page group! (use $)"
-msgstr ""
-
-#: staticpages/models.py:34
-msgid "Language"
-msgstr ""
-
-#: staticpages/models.py:35
-msgid "Page Rank"
-msgstr ""
-
-#: staticpages/models.py:36
-msgid ""
-"If multiple pages are available for a request, the highest ranked page will "
-"be served."
-msgstr ""
-
-#: staticpages/models.py:39
-msgid "Page Group"
-msgstr ""
-
-#: staticpages/models.py:40
-msgid "Copy of"
-msgstr ""
-
-#: staticpages/models.py:41
-msgid "Page Title"
-msgstr ""
-
-#: staticpages/models.py:42
-msgid "Template"
-msgstr ""
-
-#: staticpages/models.py:43
-msgid "Parse Template Tags"
-msgstr ""
-
-#: staticpages/models.py:44
-msgid "MIME Type"
-msgstr ""
-
-#: staticpages/models.py:45
-msgid "Redirect URL"
-msgstr ""
-
-#: staticpages/models.py:46
-msgid "Permanent Redirect"
-msgstr ""
-
-#: staticpages/models.py:47
-msgid "Extra HTML Head Code"
-msgstr ""
-
-#: staticpages/models.py:48
-msgid "Template Variables"
-msgstr ""
-
-#: staticpages/models.py:50
-msgid "Content"
-msgstr ""
-
-#: storeman/models.py:9 storeman/models.py:33
-msgid "Name"
-msgstr ""
-
-#: storeman/models.py:10 storeman/models.py:34
-msgid "Slug"
-msgstr ""
-
-#: storeman/models.py:11 storeman/models.py:35
-msgid "Location"
-msgstr ""
-
-#: storeman/models.py:36
-#, fuzzy
-msgid "Amount"
-msgstr "Account"
-
-#: storeman/models.py:37
-msgid "Details"
-msgstr ""
-
-#: storeman/models.py:38
-msgid "Image"
-msgstr ""
-
-#: storeman/models.py:50
-#, python-format
-msgid "%(name)s in %(location)s"
-msgstr ""
-
-#: storeman/views.py:14 templates/sitenav/mezgrman.de.html:12
-msgid "StoreMan"
-msgstr "StoreMan"
-
-#: storeman/views.py:16 storeman/views.py:37
-#: storeman/templates/storeman/items_paged.html:6
-msgid "All Items"
-msgstr ""
-
-#: storeman/views.py:17 storeman/views.py:52
-#: storeman/templates/storeman/locations_paged.html:6
-msgid "All Locations"
-msgstr ""
-
-#: storeman/views.py:18 storeman/views.py:79 storeman/views.py:80
-msgid "Add Item"
-msgstr ""
-
-#: storeman/views.py:19 storeman/views.py:102 storeman/views.py:103
-msgid "Add Location"
-msgstr ""
-
-#: storeman/views.py:20 storeman/views.py:131
-#: storeman/templates/storeman/search.html:9
-msgid "Search"
-msgstr ""
-
-#: storeman/views.py:60
-#, python-format
-msgid "Item: %s"
-msgstr ""
-
-#: storeman/views.py:61
-#, python-format
-msgid "Other Items in %s"
-msgstr ""
-
-#: storeman/views.py:63 storeman/views.py:74
-#, python-format
-msgid "%(amount)i× %(name)s"
-msgstr ""
-
-#: storeman/views.py:71
-#, python-format
-msgid "Location: %s"
-msgstr ""
-
-#: storeman/views.py:72
-#, python-format
-msgid "Items in %s"
-msgstr ""
-
-#: storeman/views.py:87
-#, python-format
-msgid "Edit Item: %s"
-msgstr ""
-
-#: storeman/views.py:88
-msgid "Edit Item"
-msgstr ""
-
-#: storeman/views.py:96
-#, python-format
-msgid "Delete Item: %s"
-msgstr ""
-
-#: storeman/views.py:110
-#, python-format
-msgid "Edit Location: %s"
-msgstr ""
-
-#: storeman/views.py:111
-msgid "Edit Location"
-msgstr ""
-
-#: storeman/views.py:119
-#, python-format
-msgid "Delete Location: %s"
-msgstr ""
-
-#: storeman/templates/storeman/search.html:5
-#, fuzzy
-msgid "Search StoreMan"
-msgstr "StoreMan"
-
-#: storeman/templates/storeman/search.html:15
-#, python-format
-msgid "%(amount)s× %(name)s in %(location)s"
-msgstr ""
-
-#: templates/base.html:121
-msgid "Powered by Django, Python 3, SQLite and Sass"
-msgstr "Diese Seite läuft mit Django, Python 3, SQLite und Sass"
-
-#: templates/base.html:122
-msgid "mezgrman.de on GitHub"
-msgstr "mezgrman.de auf GitHub"
 
 #: templates/account/login.html:4 templates/account/login.html.py:7
 #: templates/account/login.html:25
@@ -508,6 +120,14 @@ msgstr ""
 "Hast du bereits einen Account? Dann <a href=\"%(login_url)s\">melde dich "
 "bitte an</a>."
 
+#: templates/base.html:121
+msgid "Powered by Django, Python 3, SQLite and Sass"
+msgstr "Diese Seite läuft mit Django, Python 3, SQLite und Sass"
+
+#: templates/base.html:122
+msgid "mezgrman.de on GitHub"
+msgstr "mezgrman.de auf GitHub"
+
 #: templates/generic/delete.html:5
 msgid "Confirm deletion"
 msgstr "Löschen bestätigen"
@@ -515,6 +135,10 @@ msgstr "Löschen bestätigen"
 #: templates/generic/delete.html:9
 msgid "Delete"
 msgstr "Löschen"
+
+#: templates/generic/delete.html:10 templates/generic/form.html:17
+msgid "Cancel"
+msgstr "Abbrechen"
 
 #: templates/generic/form.html:16
 msgid "Save"
@@ -569,6 +193,38 @@ msgstr "Seiten"
 #: templates/sitenav/mezgrman.de.html:7
 msgid "Apps"
 msgstr "Apps"
+
+#: templates/sitenav/mezgrman.de.html:12
+msgid "Fun Tools"
+msgstr "Fun-Tools"
+
+#: templates/sitenav/mezgrman.de.html:14
+msgid "StoreMan"
+msgstr "StoreMan"
+
+#: templates/sitenav/mezgrman.de.html:17
+msgid "Display Manager"
+msgstr "Display-Verwaltung"
+
+#, fuzzy
+#~ msgid "Display Mode"
+#~ msgstr "Display-Verwaltung"
+
+#, fuzzy
+#~ msgid "Display Duration"
+#~ msgstr "Display-Verwaltung"
+
+#, fuzzy
+#~ msgid "Display %s"
+#~ msgstr "Display-Verwaltung"
+
+#, fuzzy
+#~ msgid "Amount"
+#~ msgstr "Account"
+
+#, fuzzy
+#~ msgid "Search StoreMan"
+#~ msgstr "StoreMan"
 
 #, fuzzy
 #~| msgid "Logged in as <em>%(username)s</em>."

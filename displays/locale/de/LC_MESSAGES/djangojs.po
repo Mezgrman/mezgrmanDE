@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-06 21:08+0200\n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
 "PO-Revision-Date: 2015-05-06 21:00+0200\n"
 "Last-Translator: Julian Metzler <contact@mezgr.de>\n"
 "Language-Team: Deutsch <>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 
 #: displays/static/js/displays/displays.forms.js:18
-#: displays/static/js/displays/displays.forms.js:76
+#: displays/static/js/displays/displays.forms.js:74
 msgid "Success!"
 msgstr "Erfolg!"
 
 #: displays/static/js/displays/displays.forms.js:21
-#: displays/static/js/displays/displays.forms.js:79
+#: displays/static/js/displays/displays.forms.js:77
 msgid "Error: %(error)s"
 msgstr "Fehler: %(error)s"
 
 #: displays/static/js/displays/displays.forms.js:25
-#: displays/static/js/displays/displays.forms.js:83
+#: displays/static/js/displays/displays.forms.js:81
 msgid "Error!"
 msgstr "Fehler!"
 
 #: displays/static/js/displays/displays.forms.js:51
-#: displays/static/js/displays/displays.forms.js:125
+#: displays/static/js/displays/displays.forms.js:123
 msgid "Processing..."
 msgstr "Wird verarbeitet..."
 

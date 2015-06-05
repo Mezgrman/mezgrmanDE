@@ -14,6 +14,7 @@ ALLOWED_HOSTS += [
 INSTALLED_APPS += [
     'storeman',
     'displays',
+    'funtools',
 ]
 
 # Python dotted path to the WSGI application used by Django's runserver.

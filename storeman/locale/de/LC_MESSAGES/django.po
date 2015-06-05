@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-06 21:08+0200\n"
-"PO-Revision-Date: 2015-05-06 21:06+0200\n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
+"PO-Revision-Date: 2015-06-05 19:16+0200\n"
 "Last-Translator: Julian Metzler <contact@mezgr.de>\n"
 "Language-Team: Deutsch <>\n"
 "Language: \n"
@@ -19,23 +19,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: storeman/models.py:7 storeman/models.py:22
+#: storeman/models.py:9 storeman/models.py:33
 msgid "Name"
 msgstr "Name"
 
-#: storeman/models.py:8 storeman/models.py:23
+#: storeman/models.py:10 storeman/models.py:34
+msgid "Slug"
+msgstr "Slug"
+
+#: storeman/models.py:11 storeman/models.py:35
 msgid "Location"
 msgstr "Ort"
 
-#: storeman/models.py:24
+#: storeman/models.py:36
 msgid "Amount"
 msgstr "Anzahl"
 
-#: storeman/models.py:25
+#: storeman/models.py:37
 msgid "Details"
 msgstr "Details"
 
-#: storeman/models.py:33
+#: storeman/models.py:38
+msgid "Image"
+msgstr "Bild"
+
+#: storeman/models.py:50
 #, python-format
 msgid "%(name)s in %(location)s"
 msgstr "%(name)s in %(location)s"

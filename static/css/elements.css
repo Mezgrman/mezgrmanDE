@@ -38,6 +38,8 @@ p {
 pre {
   border: 1px solid gray;
   padding: 0.5em; }
+  pre.inline {
+    display: inline-block; }
 
 table, td, th {
   border: 1px solid black; }

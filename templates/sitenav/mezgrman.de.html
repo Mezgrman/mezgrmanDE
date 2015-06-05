@@ -9,8 +9,13 @@
       <div class="banner-container">
         <div class="nav-menu">
           <ul>
-            <li><a href="{% url 'storeman:locations-paged' %}">{% trans "StoreMan" %}</a></li>
-            <li><a href="{% url 'displays:index' %}">{% trans "Display Manager" %}</a></li>
+            <li><a href="{% url 'funtools:index' %}">{% trans "Fun Tools" %}</a></li>
+            {% if perms.storeman.view_item and perms.storeman.view_location %}
+              <li><a href="{% url 'storeman:locations-paged' %}">{% trans "StoreMan" %}</a></li>
+            {% endif %}
+            {% if perms.displays.access_settings %}
+              <li><a href="{% url 'displays:index' %}">{% trans "Display Manager" %}</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>

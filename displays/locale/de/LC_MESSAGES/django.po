@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-06 21:08+0200\n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
 "PO-Revision-Date: 2015-05-05 19:33+0200\n"
 "Last-Translator: Julian Metzler <contact@mezgr.de>\n"
 "Language-Team: Deutsch <>\n"
@@ -163,12 +163,12 @@ msgstr "Abbrechen"
 msgid "Apply"
 msgstr "Anwenden"
 
-#: displays/views.py:15
+#: displays/views.py:17
 msgid "Display Manager"
 msgstr "Display-Verwaltung"
 
-#: displays/views.py:17 displays/views.py:18 displays/views.py:19
-#: displays/views.py:20 displays/views.py:68
+#: displays/views.py:19 displays/views.py:20 displays/views.py:21
+#: displays/views.py:22 displays/views.py:67
 #, python-format
 msgid "Display %s"
 msgstr "Display %s"

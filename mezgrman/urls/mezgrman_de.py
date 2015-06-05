@@ -27,6 +27,7 @@ urlpatterns = patterns('',
     url(r'^jsvars/$', 'mezgrman.views.javascript_variables', name = 'jsvars-catalog'),
     url(r"^storeman/", include('storeman.urls', app_name = 'storeman', namespace = 'storeman')),
     url(r"^displays/", include('displays.urls', app_name = 'displays', namespace = 'displays')),
+    url(r"^fun/", include('funtools.urls', app_name = 'funtools', namespace = 'funtools')),
 )
 
 urlpatterns += patterns('',

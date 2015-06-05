@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Julian Metzler <contact@mezgr.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
+"PO-Revision-Date: 2015-06-05 18:59+0200\n"
+"Last-Translator: Julian Metzler <contact@mezgr.de>\n"
+"Language-Team: Deutsch <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: funtools/templates/funtools/index.html:3
+msgid ""
+"Here you can find various tools that have no particular use, but I made them "
+"anyway."
+msgstr "Hier findest du verschiedene Tools, die keinen bestimmten Zweck haben."
+
+#: funtools/templates/funtools/text_converters.html:13
+msgid "Big"
+msgstr "Groß"
+
+#: funtools/templates/funtools/text_converters.html:14
+msgid "Flipped"
+msgstr "Umgedreht"
+
+#: funtools/templates/funtools/text_converters.html:15
+msgid "Elegant"
+msgstr "Elegant"
+
+#: funtools/templates/funtools/text_converters.html:16
+msgid "Elegant Bold"
+msgstr "Elegant Fett"
+
+#: funtools/templates/funtools/text_converters.html:17
+msgid "Gothic"
+msgstr "Fraktur"
+
+#: funtools/templates/funtools/text_converters.html:18
+msgid "Gothic Bold"
+msgstr "Fraktur Fett"
+
+#: funtools/templates/funtools/text_converters.html:19
+msgid "Sans"
+msgstr "Sans"
+
+#: funtools/templates/funtools/text_converters.html:20
+msgid "Sans Bold"
+msgstr "Sans Fett"
+
+#: funtools/templates/funtools/text_converters.html:21
+msgid "Sans Italic"
+msgstr "Sans Kursiv"
+
+#: funtools/templates/funtools/text_converters.html:22
+msgid "Sans Italic Bold"
+msgstr "Sans Kursiv Fett"
+
+#: funtools/templates/funtools/text_converters.html:23
+msgid "Mono"
+msgstr "Festbreite"
+
+#: funtools/templates/funtools/text_converters.html:24
+msgid "Serif Bold"
+msgstr "Serif Fett"
+
+#: funtools/templates/funtools/text_converters.html:25
+msgid "Serif Italic"
+msgstr "Serif Kursiv"
+
+#: funtools/templates/funtools/text_converters.html:26
+msgid "Serif Italic Bold"
+msgstr "Serif Kursiv Fett"
+
+#: funtools/templates/funtools/text_converters.html:27
+msgid "Double Struck"
+msgstr "Doppelt gestrichen"
+
+#: funtools/templates/funtools/text_converters.html:28
+msgid "Full Width"
+msgstr "Vollbreite"
+
+#: funtools/templates/funtools/text_converters.html:29
+msgid "Messed up (Low)"
+msgstr "Artefakte (wenig)"
+
+#: funtools/templates/funtools/text_converters.html:30
+msgid "Messed up (Medium)"
+msgstr "Artefakte (mittel)"
+
+#: funtools/templates/funtools/text_converters.html:31
+msgid "Messed up (High)"
+msgstr "Artefakte (viel)"
+
+#: funtools/templates/funtools/text_converters.html:32
+msgid "Messed up (Insane)"
+msgstr "Artefakte (extrem)"
+
+#: funtools/templates/funtools/text_converters.html:33
+#| msgid "Diagonal Strikethrough"
+msgid "Horizontal Strikethrough"
+msgstr "Horizontal durchgestrichen"
+
+#: funtools/templates/funtools/text_converters.html:34
+msgid "Diagonal Strikethrough"
+msgstr "Diagonal durchgestrichen"
+
+#: funtools/templates/funtools/text_converters.html:36
+msgid "Convert"
+msgstr "Konvertieren"
+
+#: funtools/views.py:10
+msgid "Fun Tools"
+msgstr "Fun-Tools"
+
+#: funtools/views.py:12 funtools/views.py:125
+msgid "Text Converters"
+msgstr "Text-Konverter"
+
+#: funtools/views.py:18
+msgid "Index"
+msgstr "Index"
+
+#~ msgid "Vertical Strikethrough"
+#~ msgstr "Vertikal durchgestrichen"

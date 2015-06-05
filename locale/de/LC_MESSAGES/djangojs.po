@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-29 23:02+0200\n"
+"POT-Creation-Date: 2015-06-05 18:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: displays/static/js/displays/displays.forms.js:18
-#: displays/static/js/displays/displays.forms.js:74
-msgid "Success!"
-msgstr ""
-
-#: displays/static/js/displays/displays.forms.js:21
-#: displays/static/js/displays/displays.forms.js:77
-msgid "Error: %(error)s"
-msgstr ""
-
-#: displays/static/js/displays/displays.forms.js:25
-#: displays/static/js/displays/displays.forms.js:81
-msgid "Error!"
-msgstr ""
-
-#: displays/static/js/displays/displays.forms.js:51
-#: displays/static/js/displays/displays.forms.js:123
-msgid "Processing..."
-msgstr ""
-
-#: displays/static/js/displays/displays.messagelist.js:160
-msgid "Send Selected"
-msgstr ""
-
-#: displays/static/js/displays/displays.messagelist.js:160
-msgid "Send All"
-msgstr ""
 
 #: static/js/datetimepicker.init.js:69
 msgid "Select Time"
@@ -82,7 +54,7 @@ msgstr "Zeitzone"
 msgid "Now"
 msgstr "Jetzt"
 
-#: static/js/datetimepicker.init.js:78 static/js/datetimepicker.init.js.c:85
+#: static/js/datetimepicker.init.js:78 static/js/datetimepicker.init.js:85
 msgid "Done"
 msgstr "Fertig"
 

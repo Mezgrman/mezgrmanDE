@@ -18,3 +18,19 @@ def view_tuple(obj):
         return (obj[0], (), obj[1])
     
     return ('', (), {})
+
+def multiline_join(blocks, separator = ""):
+    lines = []
+    n = 0
+    for block in blocks:
+        block_lines = block.splitlines()
+        for i in range(len(block_lines)):
+            try:
+                lines[i] += block_lines[i]
+            except IndexError:
+                lines.append(block_lines[i])
+            if(n < len(blocks) - 1):
+                lines[i] += separator
+        n += 1
+    result = "\n".join(lines)
+    return result

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_panel %}
+  {% if result %}
+    <pre class="inline">{{ result }}</pre>
+  {% endif %}
+
+<form method="post" class="flex-hor-mobile-ver flex-has-margin">
+  {% csrf_token %}
+  <input type="text" name="text" value="{{ text }}" />
+  <select name="type">
+    <option value="big">{% trans "Big" %}</option>
+    <option value="flip">ɔqɐ {% trans "Flipped" %}</option>
+    <option value="elegant">𝓪𝓫𝓬 {% trans "Elegant" %}</option>
+    <option value="elegant-bold">𝒶𝒷𝒸 {% trans "Elegant Bold" %}</option>
+    <option value="gothic">𝔞𝔟𝔠 {% trans "Gothic" %}</option>
+    <option value="gothic-bold">𝖆𝖇𝖈 {% trans "Gothic Bold" %}</option>
+    <option value="sans">𝖺𝖻𝖼 {% trans "Sans" %}</option>
+    <option value="sans-bold">𝗮𝗯𝗰 {% trans "Sans Bold" %}</option>
+    <option value="sans-italic">𝘢𝘣𝘤 {% trans "Sans Italic" %}</option>
+    <option value="sans-italic-bold">𝙖𝙗𝙘 {% trans "Sans Italic Bold" %}</option>
+    <option value="mono">𝚊𝚋𝚌 {% trans "Mono" %}</option>
+    <option value="serif-bold">𝐚𝐛𝐜 {% trans "Serif Bold" %}</option>
+    <option value="serif-italic">𝑎𝑏𝑐 {% trans "Serif Italic" %}</option>
+    <option value="serif-italic-bold">𝒂𝒃𝒄 {% trans "Serif Italic Bold" %}</option>
+    <option value="doublestruck">𝕒𝕓𝕔 {% trans "Double Struck" %}</option>
+    <option value="fullwidth">ａｂｃ {% trans "Full Width" %}</option>
+    <option value="messed-up-low">a̻b̃c̄ {% trans "Messed up (Low)" %}</option>
+    <option value="messed-up-medium">a͍͚̅̐͡b̗̌̍̋͡c̝ͪ̌̃ͅ {% trans "Messed up (Medium)" %}</option>
+    <option value="messed-up-high">a̴̸̧̟͎̱̗̰̾̾b̙̭̦͎ͯͫ́ͧ͡͠c̸͇͚̭̟ͯ̀̉́͘ {% trans "Messed up (High)" %}</option>
+    <option value="messed-up-insane">ą̸̵̵̡̛̲̼̬̣̬̘͓̣̞̮̼͙̲̬̙̺̮͚̺͔̺͖̜̠̲̣ͭ̿̊̆ͦͨ̐̊ͫ̔́͑̃̆̇͛̾̓͛̿ͫ̌͛̃ͫ̀ͥ̀̑ͪ̾ͧ͛̇͂̓͊ͭ́͟͢͠͝͝͏̴̨̼͔̺̟̞̰͍́̎ͪ͗͛̅̆̽̑ͣ͐ͭͬ͡b̷̴̨̧͙͔̘̙̬̳̱̣̪̹̫͔̭̼̀ͧͯͣͪ͋ͧͥ̑͆̎ͨͨ̆̌̑ͨ͐͞͞҉̴̶̸̢̤͓̤̫̤͈̣̯̹̦̥͔̱͛͋̍̓̄̑̉̅ͩ͝͠͡ͅ҉̸̸̧͍̼͉͚̭̻͇͕̲̬ͦ͑͛͛ͮͣ͐̽̉͒̀̈́͟͢͜͠͞c̵̴̢̹͚̭͍̳̘̹̦̦̫̻̻̻͙̊̊́̄͑͌͐͑̆̋̽̑̈́̾͜͏̵̴̧̨̧̣̤̳͍͖̬̥̣͍̫̳̟̺̣̦̼̘̭͈̦̯̹̓ͤ̾̂ͧ̿̈́̅̇̏ͧ̏͐̾̾ͪ̓̏̐ͮͬ͑ͣ̐͘͘͟͞͝͝͠͡҉̶̦̣̜̜̻̂ {% trans "Messed up (Insane)" %}</option>
+    <option value="strikethrough-horizontal">a̶b̶c̶ {% trans "Horizontal Strikethrough" %}</option>
+    <option value="strikethrough-diagonal">a̸b̸c̸ {% trans "Diagonal Strikethrough" %}</option>
+  </select>
+  <input type="submit" value="{% trans 'Convert' %}" />
+</form>
+{% endblock main_panel %}
