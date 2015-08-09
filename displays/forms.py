@@ -42,12 +42,13 @@ class TextMessageForm(forms.ModelForm):
         ('right', _("Right"))
     ))
     font = forms.ChoiceField(label = _("Font"), choices = (
-        ('freesans', "FreeSans"),
-        ('freeserif', "FreeSerif"),
-        ('sans', "Sans"),
-        ('serif', "Serif")
+        ('pixelmix', "PixelMix (8px)"),
+        ('press start 2p', "Press Start 2P (8px)"),
+        ('nokia cellphone fc', "Nokia Cellphone FC (8px)"),
+        ('metoopixzi', "Me Too Pixzi (6px)"),
+        ('graph 35+ pix', "Graph 35+ Pix (8px)")
     ))
-    size = forms.IntegerField(label = _("Font Size"), min_value = 1, max_value = 20, initial = 11)
+    size = forms.IntegerField(label = _("Font Size"), min_value = 1, max_value = 20, initial = 8)
     parse_time_string = forms.BooleanField(label = _("Parse Time String"))
     blend_bitmap = forms.BooleanField(label = _("Blend Bitmap"))
     use_config = forms.BooleanField(label = _("Specific Configuration"))
