@@ -81,8 +81,8 @@ function displays_initSimulation() {
     });
     displays_simulationSVG = $("#display-simulation").svg('get');
     displays_simulationSVGRoot = displays_simulationSVG.root();
-    displays_loadCurrentBitmap();
     displays_loadStates();
+    setTimeout(displays_loadCurrentBitmap, 500);
     setInterval(displays_loadCurrentBitmap, 3000);
     setInterval(displays_loadStates, 3000);
 }
