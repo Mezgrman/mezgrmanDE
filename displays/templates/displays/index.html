@@ -1,4 +1,22 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block main_panel %}
-<pre>{{ config }}</pre>
+{% for display, data in overview.items %}
+<h1>{% blocktrans %}Display {{ display }}{% endblocktrans %}</h1>
+<table class="key-value">
+  <tr>
+    <th>{% trans "Matrix enabled: " %}</th>
+    <td>{{ data.config.power_state|yesno }}</td>
+  </tr>
+  <tr>
+    <th>{% trans "Stop indicator enabled: " %}</th>
+    <td>{{ data.config.stop_indicator|yesno }}</td>
+  </tr>
+  <tr>
+    <th>{% trans "Current message: " %}</th>
+    <td>{{ data.message|linebreaksbr }}</td>
+  </tr>
+</table>
+<p></p>
+{% endfor %}
 {% endblock main_panel %}

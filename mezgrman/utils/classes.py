@@ -5,6 +5,12 @@ from .functions import view_tuple
 
 import json
 
+class HttpResponseServiceUnavailable(HttpResponse):
+    status_code = 503
+
+class HttpResponseGatewayTimeout(HttpResponse):
+    status_code = 504
+
 class ExtendedTemplateResponse(TemplateResponse):
     """
     A TemplateResponse with support for navigation and sidebar entries.
