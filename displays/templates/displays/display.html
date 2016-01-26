@@ -54,6 +54,20 @@
           </tr>
         </table>
     </form>
+    
+    <!-- Form for a single bitmap message, no direct data transfer to server -->
+    <form id="form-bitmap-message" class="hidden">
+      <table class="form">
+          {{ bitmap_message_form.as_table }}
+          <tr>
+            <th></th>
+            <td>
+              <input type="submit" id="btn-save-bitmap-msg" name="apply" value="{% trans 'Add' %}" />
+              <input type="button" id="btn-cancel-bitmap-msg" value="{% trans 'Cancel' %}" />
+            </td>
+          </tr>
+        </table>
+    </form>
   </div>
   
   <form id="form-settings" action="{% url 'displays:ajax-settings' display_id %}" method="post">

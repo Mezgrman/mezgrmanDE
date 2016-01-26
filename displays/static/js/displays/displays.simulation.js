@@ -77,7 +77,8 @@ function displays_loadStates() {
 
 function displays_initSimulation() {
     $("#display-simulation").svg({
-        loadURL: STATIC_PREFIX + "images/displays/display-simulation.svg"
+        loadURL: STATIC_PREFIX + "images/displays/display-simulation.svg",
+        onLoad: function() { $("#display-simulation > svg").attr('height', "100%"); } // For Chrome compatibility
     });
     displays_simulationSVG = $("#display-simulation").svg('get');
     displays_simulationSVGRoot = displays_simulationSVG.root();

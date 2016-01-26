@@ -7,6 +7,7 @@ from .forms import DisplaySettingsForm, TextMessageForm
 from .models import DisplaySettings, TextMessage
 from annax import MatrixClient
 import json
+import socket
 
 from .settings_secure import *
 
@@ -28,7 +29,7 @@ def index(request):
     try:
         config = client.get_config(keys = ('power_state', 'stop_indicator'))
         messages = client.get_message()
-    except ConnectionRefusedError:
+    except (ConnectionRefusedError, socket.timeout):
         return ExtendedTemplateResponse(request, "displays/unavailable.html", NAV_DATA)
 
     data = {
@@ -57,7 +58,7 @@ def display(request, id):
     try:
         config = client.get_config(displays = (actual_id, ))[str(actual_id)]
         message = client.get_message(displays = (actual_id, ))[str(actual_id)]
-    except ConnectionRefusedError:
+    except (ConnectionRefusedError, socket.timeout):
         return ExtendedTemplateResponse(request, "displays/unavailable.html", NAV_DATA)
 
     settings_form = DisplaySettingsForm(initial = config)

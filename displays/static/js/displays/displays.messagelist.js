@@ -235,6 +235,30 @@ function displays_textMessageCancelClickHandler(event) {
     displays_clearMessageListSelection();
 }
 
+function displays_textMessageSaveClickHandler(event) {
+    event.preventDefault();
+    
+    var message = displays_getMessageFromForms('text');
+    
+    var selected = $("#sel-msg-list option:selected");
+    var numSelected = (selected || []).length;
+    
+    if(numSelected == 1) {
+        // Exactly one message selected, we're gonna overwrite it
+        displays_addMessage(message, selected);
+    } else {
+        // In any other case, just add a new message
+        displays_addMessage(message);
+    }
+    
+    displays_updateMessageListButtons();
+}
+
+function displays_textMessageCancelClickHandler(event) {
+    displays_hideTextMessageForm();
+    displays_clearMessageListSelection();
+}
+
 function displays_removeMessageClickHandler(event) {
     var selected = $("#sel-msg-list option:selected").each(function(index, option) {
         option.remove();
@@ -261,6 +285,8 @@ function displays_initMessageList() {
     $("#btn-add-bitmap-msg").click(displays_addBitmapMessageClickHandler);
     $("#btn-save-text-msg").click(displays_textMessageSaveClickHandler);
     $("#btn-cancel-text-msg").click(displays_textMessageCancelClickHandler);
+    //$("#btn-save-bitmap-msg").click(displays_bitmapMessageSaveClickHandler);
+    //$("#btn-cancel-bitmap-msg").click(displays_bitmapMessageCancelClickHandler);
     $("#btn-remove-msg").click(displays_removeMessageClickHandler);
     $("#btn-move-msg-up").click(displays_moveMessageUpClickHandler);
     $("#btn-move-msg-down").click(displays_moveMessageDownClickHandler);
