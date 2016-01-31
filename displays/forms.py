@@ -46,7 +46,9 @@ class TextMessageForm(forms.ModelForm):
         ('press start 2p', "Press Start 2P (8px)"),
         ('nokia cellphone fc', "Nokia Cellphone FC (8px)"),
         ('metoopixzi', "Me Too Pixzi (6px)"),
-        ('graph 35+ pix', "Graph 35+ Pix (8px)")
+        ('graph 35+ pix', "Graph 35+ Pix (8px)"),
+        ('fipps', "Fipps (8px)"),
+        ('minecraftia', "Minecraftia (8px)")
     ))
     size = forms.IntegerField(label = _("Font Size"), min_value = 1, max_value = 20, initial = 8)
     parse_time_string = forms.BooleanField(label = _("Parse Time String"))
